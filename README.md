@@ -21,7 +21,7 @@ of `https://api.tvmaze.com/api`
 
 - For Packaging the application, digit: mvn compile package
 After this, running the application digiting: 
-java -jar target/quarkus-app/quarkus-resteasy-reactive-movies-1.0.0-SNAPSHOT.jar
+java -jar target/quarkus-app/rest-client-rest-easy-1.0.0-SNAPSHOT.jar
 
 ## Tecnologies used
 Extension:
