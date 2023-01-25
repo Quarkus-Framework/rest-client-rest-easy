@@ -47,6 +47,11 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-rest-client-jackson</artifactId>
     </dependency>
+    <!-- Handles fault-tolerant for network services -->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-fault-tolerance</artifactId>
+    </dependency>
     <!-- OpenApi dependency for Microprofile -->
     <dependency>
       <groupId>io.quarkus</groupId>

@@ -11,6 +11,13 @@ by `https://api.tvmaze.com/api` that return tv series episodes.
 The application, using a Proxy class, create an HTTP request, process the result and return the HTTP response.
 Example request: `http://localhost:8080/tvseries?title=game of thrones`
 
+Fault Tolerance specification using `@Fallback` is to focus on the following aspects:
+- Timeout: Define a duration for a timeout
+- Retry: Define criteria on when to retry
+ -Fallback: provide an alternative solution for a failed execution.
+- CircuitBreaker: offer a way to fail fast by automatically failing execution to prevent the system overloading and indefinite wait or timeout by the clients.
+- Bulkhead: isolate failures in part of the system while the rest part of the system can still function.
+
 It use of OpenAPI for write documentation like Swagger: after compile the application,
 have to digit on browser: `http://localhost:8080/q/openapi`
 
@@ -28,6 +35,7 @@ Extension:
 - RESTEasy: write rest service
 - OpenAPI: shows Apis documentation and Swagger
 - Rest-Client: use a proxy class for make http request
+- Smallrye Fault Tolerance: handles fault-tolerant for network services
 
 ## Running the application in dev mode
 
